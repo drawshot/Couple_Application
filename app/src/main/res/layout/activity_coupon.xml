@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".CouponActivity">
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/relativeLayout"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:background="@color/app_background"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/woogi_hori_line1_r"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/coupon_layout_right"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/coupon_layout_left"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/constraintLayout"></RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:background="@color/app_background"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/jihye_hori_line1_r"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/coupon_layout_right"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/coupon_layout_left"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/jihye_coupon_upline"></RelativeLayout>-->
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_marginStart="16dp"
+        android:gravity="bottom"
+        android:text="쿠폰북❤︎"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/coupon_text_hori_line"
+        app:layout_constraintEnd_toStartOf="@+id/coupon_text_verti_line"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/home_btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/home"
+        app:layout_constraintBottom_toTopOf="@+id/coupon_text_hori_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="@+id/coupon_text_verti_line" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/layout_border"
+        app:layout_constraintBottom_toTopOf="@+id/woogi_coupon_downline"
+        app:layout_constraintEnd_toStartOf="@+id/coupon_layout_right"
+        app:layout_constraintStart_toStartOf="@+id/coupon_layout_left"
+        app:layout_constraintTop_toTopOf="@+id/woogi_coupon_upline">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="욱이쿠폰"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/woogi_coupon_num"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:text="1개"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/woogi_hori_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.34" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/woogi_hori_line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.67" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/layout_border"
+        app:layout_constraintBottom_toTopOf="@+id/jihye_coupon_downline"
+        app:layout_constraintEnd_toStartOf="@+id/coupon_layout_right"
+        app:layout_constraintStart_toStartOf="@+id/coupon_layout_left"
+        app:layout_constraintTop_toTopOf="@+id/jihye_coupon_upline">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="지혜쿠폰"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/jihye_hori_line1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/jihye_coupon_num"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="2개"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/jihye_hori_line2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/jihye_hori_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.34" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/jihye_hori_line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.67" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/coupon_relative_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/coupon_text_hori_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/coupon_text_verti_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8255208" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/coupon_layout_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/coupon_layout_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/jihye_coupon_upline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5996622" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/woogi_coupon_upline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/jihye_coupon_downline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/woogi_coupon_downline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/woogi_hori_line1_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/jihye_hori_line1_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68" />
+
+
+
+</android.support.constraint.ConstraintLayout>

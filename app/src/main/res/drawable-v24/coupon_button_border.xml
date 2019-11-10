@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <layer-list>
+
+            <!-- background (위로) -->
+            <item>
+                <!--<shape>-->
+                    <!--<corners android:radius="30dp" />-->
+                    <!--<solid android:color="#ffffff" />-->
+                    <!--<corners android:radius="10dp" />-->
+                <!--</shape>-->
+                <shape android:shape="rectangle"  >
+                    <corners android:radius="20dip" />
+                    <stroke android:width="1dip" android:color="#ffffff" />
+                    <gradient android:angle="-90" android:startColor="@color/app_coupon_button_s" android:endColor="@color/app_coupon_button_e"  />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+
+</selector>

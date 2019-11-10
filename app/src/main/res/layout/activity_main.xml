@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/app_background"
+        app:layout_constraintBottom_toTopOf="@+id/main_relative_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_marginStart="16dp"
+        android:gravity="bottom"
+        android:text="욱이❤︎지혜"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/main_text_hori_line"
+        app:layout_constraintEnd_toStartOf="@+id/main_text_verti_line"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/home_btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/home"
+        app:layout_constraintBottom_toTopOf="@+id/main_text_hori_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="@+id/main_text_verti_line" />
+
+    <Button
+        android:id="@+id/todo_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.55"
+        android:background="@drawable/box_border"
+        android:text="먹거리\n리스트"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/main_todo_btn_down"
+        app:layout_constraintEnd_toStartOf="@+id/main_button_right1"
+        app:layout_constraintStart_toStartOf="@+id/main_hw_left"
+        app:layout_constraintTop_toTopOf="@+id/main_todo_btn_up"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/calendar_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.55"
+        android:background="@drawable/box_border"
+        android:text="추억\n리스트"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/main_todo_btn_down"
+        app:layout_constraintEnd_toStartOf="@+id/main_button_right2"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/main_button_left2"
+        app:layout_constraintTop_toTopOf="@+id/main_todo_btn_up" />
+
+    <ImageView
+        android:id="@+id/woogi_img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/woogi3"
+        app:layout_constraintBottom_toTopOf="@+id/main_img_down"
+        app:layout_constraintEnd_toStartOf="@+id/main_button_right2"
+        app:layout_constraintStart_toStartOf="@+id/main_jh_left"
+        app:layout_constraintTop_toTopOf="@+id/main_img_up" />
+
+    <ImageView
+        android:id="@+id/jihye_img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/jihye3"
+        app:layout_constraintBottom_toTopOf="@+id/main_img_down"
+        app:layout_constraintEnd_toStartOf="@+id/main_hw_right"
+        app:layout_constraintStart_toStartOf="@+id/main_hw_left"
+        app:layout_constraintTop_toTopOf="@+id/main_img_up" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/heart_img"
+        app:layout_constraintBottom_toTopOf="@+id/main_heart_down"
+        app:layout_constraintEnd_toStartOf="@+id/main_button_left2"
+        app:layout_constraintStart_toStartOf="@+id/main_button_right1"
+        app:layout_constraintTop_toTopOf="@+id/main_heart_up" />
+
+    <TextView
+        android:id="@+id/love_date"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:text="D + 35"
+        android:textAlignment="center"
+        android:textColor="#ff2900"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/main_img_up"
+        app:layout_constraintEnd_toStartOf="@+id/main_jh_left"
+        app:layout_constraintStart_toStartOf="@+id/main_hw_right"
+        app:layout_constraintTop_toTopOf="@+id/main_relative_line" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/main_relative_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/main_text_hori_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/main_text_verti_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8255208" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/main_todo_btn_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.56" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/main_todo_btn_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.77" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/main_hw_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/main_jh_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/main_hw_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.38" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/main_jh_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.62" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/main_img_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/main_img_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.46" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/main_heart_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.41" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/main_heart_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.31" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/main_button_right1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.46" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/main_button_left2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.54" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/main_button_right2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+</android.support.constraint.ConstraintLayout>

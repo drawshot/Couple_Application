@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jihye.wooogi.jihye_app">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/heart1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".CouponActivity" />
+        <activity android:name=".TodoActivity" />
+        <activity android:name=".WooGi_Coupon" />
+        <activity android:name=".JiHye_Coupon" />
+
+        <receiver android:name=".WidgetActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_activity_info" />
+        </receiver>
+
+        <activity android:name=".CouponAdd" />
+        <activity android:name=".CouponUse" />
+        <activity android:name=".Calendar_View" />
+        <activity android:name=".CalendarContents_List"></activity>
+    </application>
+
+</manifest>

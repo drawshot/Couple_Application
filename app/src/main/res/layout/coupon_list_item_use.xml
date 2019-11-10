@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:alpha="0.4"
+    android:background="@drawable/coupon_button_border">
+
+    <TextView
+        android:id="@+id/coupon_txtView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:text="소원권"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/coupon_name_right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <TextView
+        android:id="@+id/date_start_txtView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        android:text="2018-12-01 부터"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/date_txt_center"
+        app:layout_constraintEnd_toStartOf="@+id/coupon_btn_left"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toStartOf="@+id/date_txt_left"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/coupon_use_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/box_border"
+        android:text="사용하기"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/coupon_btn_down"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/coupon_btn_left"
+        app:layout_constraintTop_toTopOf="@+id/date_txt_center" />
+
+    <TextView
+        android:id="@+id/date_end_textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"
+        android:text="2019-02-28 까지"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/center_line"
+        app:layout_constraintEnd_toStartOf="@+id/coupon_btn_left"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/date_txt_left"
+        app:layout_constraintTop_toTopOf="@+id/date_txt_center" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/coupon_name_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/date_txt_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.23" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/date_txt_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/date_txt_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/coupon_btn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.73" />
+
+    <TextView
+        android:id="@+id/content_txt"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/coupon_btn_left"
+        app:layout_constraintStart_toStartOf="@+id/date_txt_left"
+        app:layout_constraintTop_toTopOf="@+id/center_line" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/center_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/coupon_btn_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <TextView
+        android:id="@+id/use_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:text="사용완료"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/coupon_btn_down"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/coupon_btn_left"
+        app:layout_constraintTop_toTopOf="@+id/date_txt_center" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/is_use_txtView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:layout_marginBottom="8dp"-->
+    <!--android:text="TextView"-->
+    <!--android:textSize="20sp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/date_txtView"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+</android.support.constraint.ConstraintLayout>

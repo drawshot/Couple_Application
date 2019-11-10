@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "272473338482",
+    "firebase_url": "https://wook-jihye.firebaseio.com",
+    "project_id": "wook-jihye",
+    "storage_bucket": "wook-jihye.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272473338482:android:2fae35821c511685",
+        "android_client_info": {
+          "package_name": "jihye.wooogi.jihye_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272473338482-p2u5q3sghilea94v2setotqdjkt7mr98.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jihye.wooogi.jihye_app",
+            "certificate_hash": "149889c5c0d356d0ea7f4a293cb9a9708250bf21"
+          }
+        },
+        {
+          "client_id": "272473338482-t0rih0avudo175oicpsc0g9kir0h9evu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvrGDY0t9aUx3KyGBF4Bik_Ra8rg2aBBc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272473338482-t0rih0avudo175oicpsc0g9kir0h9evu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
